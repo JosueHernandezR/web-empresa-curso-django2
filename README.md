@@ -1,2 +1,2 @@
 # web-empresa-curso-django2
-Proyecto Curso Django2
+Proyecto del Curso Django2
