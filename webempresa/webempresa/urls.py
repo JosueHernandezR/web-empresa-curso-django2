@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 
-
 urlpatterns = [
     # Paths del core
     path('', include('core.urls')),
@@ -36,3 +35,11 @@ urlpatterns = [
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Custom Titles for Admin
+admin.site.site_header = "La Caffetiera"
+admin.site.index_title = "Panel de administrador"
+admin.site.site_title = "La Caffetiera"
+
+#admin.site.index_template = 'admin/base_site.html'
+admin.autodiscover()

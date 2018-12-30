@@ -17,6 +17,7 @@ h6 {
 
 p {
   line-height: 1.75;
+  word-wrap: break-word;
 }
 
 .text-faded {
@@ -50,6 +51,7 @@ p {
 
 .section-heading {
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .section-heading .section-heading-upper {
